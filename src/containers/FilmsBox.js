@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import FilmList from '../components/FilmList';
 import Button from '../components/Button';
+
 const FilmBox = () => {
     const [films] = useState(
     [
@@ -34,11 +35,8 @@ const FilmBox = () => {
         <>
         <div className='app'>
         <h2> Upcoming Film Releases for UK </h2>
-        <hr> </hr>
         <FilmList films = {films}/>
-        <hr></hr>
         <Button></Button>
-        <hr> </hr>
         </div>
         </>
     )
